@@ -1,0 +1,159 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1655745987.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "id",
+      "firstName",
+      "lastName",
+      "address",
+      "city",
+      "telephone",
+      "pets",
+      "new"
+    ],
+    "properties": {
+      "id": {
+        "$id": "#root/items/id",
+        "title": "Id",
+        "type": "integer",
+        "examples": [
+          5
+        ],
+        "default": 0
+      },
+      "firstName": {
+        "$id": "#root/items/firstName",
+        "title": "Firstname",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "Peter"
+        ],
+        "pattern": "^.*$"
+      },
+      "lastName": {
+        "$id": "#root/items/lastName",
+        "title": "Lastname",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "McTavish"
+        ],
+        "pattern": "^.*$"
+      },
+      "address": {
+        "$id": "#root/items/address",
+        "title": "Address",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "2387 S. Fair Way"
+        ],
+        "pattern": "^.*$"
+      },
+      "city": {
+        "$id": "#root/items/city",
+        "title": "City",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "Madison"
+        ],
+        "pattern": "^.*$"
+      },
+      "telephone": {
+        "$id": "#root/items/telephone",
+        "title": "Telephone",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "6085552765"
+        ],
+        "pattern": "^.*$"
+      },
+      "pets": {
+        "$id": "#root/items/pets",
+        "title": "Pets",
+        "type": "array",
+        "default": [],
+        "items":{
+          "$id": "#root/items/pets/items",
+          "title": "Items",
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "birthDate",
+            "visits",
+            "new"
+          ],
+          "properties": {
+            "id": {
+              "$id": "#root/items/pets/items/id",
+              "title": "Id",
+              "type": "integer",
+              "examples": [
+                6
+              ],
+              "default": 0
+            },
+            "name": {
+              "$id": "#root/items/pets/items/name",
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "George"
+              ],
+              "pattern": "^.*$"
+            },
+            "birthDate": {
+              "$id": "#root/items/pets/items/birthDate",
+              "title": "Birthdate",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "2000-01-20"
+              ],
+              "pattern": "^.*$"
+            },
+            "visits": {
+              "$id": "#root/items/pets/items/visits",
+              "title": "Visits",
+              "type": "array",
+              "default": []
+            },
+            "new": {
+              "$id": "#root/items/pets/items/new",
+              "title": "New",
+              "type": "boolean",
+              "examples": [
+                false
+              ],
+              "default": true
+            }
+          }
+        }
+
+      },
+      "new": {
+        "$id": "#root/items/new",
+        "title": "New",
+        "type": "boolean",
+        "examples": [
+          false
+        ],
+        "default": true
+      }
+    }
+  }
+
+}
